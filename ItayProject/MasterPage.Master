@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ItayProject.MasterPage" ClientIDMode ="Static" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="css/styles.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+            <nav>
+           <ul>
+               <li><a href="index.aspx">Home</a></li>
+               <li><a href="workout.aspx">Workout plan</a></li>
+               <li><a href="diet.aspx">Diet</a></li>
+               <li><a href="login.aspx">Login</a></li>
+               <li><a href="registration.aspx">Registration</a></li>
+               <% if ( Convert.ToBoolean(Session["admin"]) == true ) { %>
+               <li><a href="tblUsers.aspx">Users</a></li>
+                <% } %>
+
+               <li class="hellovist">Hello <%:Session["userName"] %></li>
+           </ul>
+      </nav>
+    </header>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

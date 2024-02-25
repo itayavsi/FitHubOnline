@@ -1,0 +1,87 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="diet.aspx.cs" Inherits="ItayProject.WebPages.diet" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+       <link href="../css/styles.css" rel="stylesheet" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <main>
+        <div class="diet-form">
+            <h1>Create Your Diet Plan</h1>
+            <p>Customize your diet based on your preferences.</p>
+            <form id="diet-form">
+                <div class="input-container">
+                    <label for="diet-category">Diet Category:</label>
+                    <select id="diet-category" name="diet-category">
+                        <option value="balanced">Kosher Diet</option>
+                        <option value="vegetarian">Vegetarian Diet</option>
+                        <option value="vegan">Vegan Diet</option>
+                        <option value="keto">Keto Diet</option>
+                        <option value="paleo">Paleo Diet</option>
+                    </select>
+                </div>
+            </form>
+            <div id="diet-plan">
+                <h2 class="red">Your Diet Plan:</h2>
+                <p id="diet-description">Here's a diet plan based on your preferences:
+                </p>
+            </div>
+        </div>
+
+        <section class="diet-category" id="balanced-diet" style="display: none;">
+            <h3>Balanced Diet Plan</h3>
+            <p>For a balanced diet, include a variety of foods from all food groups in your meals. Here's a sample meal plan:</p>
+            <ul>
+                <li>Breakfast: Scrambled eggs with spinach and whole-grain toast.</li>
+
+                <li>Lunch: Grilled chicken salad with mixed vegetables.</li>
+
+                <li>Dinner: Baked salmon with quinoa and steamed broccoli.</li>
+
+                <li>Snacks: Greek yogurt with berries and a handful of nuts.</li>
+            </ul>
+        </section>
+        <section class="diet-category" id="vegetarian-diet" style="display: none;">
+            <h3>Vegetarian Diet Plan</h3>
+            <p>For a vegetarian diet, include a variety of plant-based foods from all food groups in your meals. Here's a sample vegetarian meal plan:</p>
+            <ul>
+                <li>Breakfast: Scrambled tofu with spinach and whole-grain toast.</li>
+                <li>Lunch: Chickpea and vegetable stir-fry with brown rice.</li>
+                <li>Dinner: Grilled portobello mushrooms with quinoa and steamed asparagus.</li>
+                <li>Snacks: Greek yogurt with berries and a handful of almonds or mixed fruit salad.</li>
+            </ul>
+        </section>
+        <section class="diet-category" id="keto-diet" style="display: none;">
+            <h3>Keto Diet Plan</h3>
+            <p>For a keto diet, focus on low-carb, high-fat foods. Here's a sample keto meal plan:</p>
+            <ul>
+                <li>Breakfast: Scrambled eggs with avocado and bacon.</li>
+                <li>Lunch: Grilled chicken with a side of broccoli and a Caesar salad.</li>
+                <li>Dinner: Baked salmon with asparagus and a side of cauliflower mash.</li>
+                <li>Snacks: Mixed nuts or celery sticks with cream cheese.</li>
+            </ul>
+        </section>
+        
+        <section class="diet-category" id="paleo-diet" style="display: none;">
+            <h3>Paleo Diet Plan</h3>
+            <p>For a Paleo diet, focus on whole foods that our ancestors might have eaten. Here's a sample Paleo meal plan:</p>
+            <ul>
+                <li>Breakfast: Scrambled eggs with vegetables and a side of berries.</li>
+                <li>Lunch: Grilled chicken breast with a side of roasted sweet potatoes and steamed broccoli.</li>
+                <li>Dinner: Baked salmon with asparagus and a mixed greens salad.</li>
+                <li>Snacks: A handful of nuts and sliced apples.</li>
+            </ul>
+        </section>
+        <section class="diet-category" id="vegan-diet" style="display: none;">
+            <h3>Vegan Diet Plan</h3>
+            <p>For a vegan diet, focus on plant-based foods and exclude all animal products. Here's a sample vegan meal plan:</p>
+            <ul>
+                <li>Breakfast: Oatmeal topped with mixed berries and almond milk.</li>
+                <li>Lunch: Quinoa and black bean salad with a lemon-tahini dressing.</li>
+                <li>Dinner: Roasted vegetable and tofu stir-fry with brown rice.</li>
+                <li>Snacks: Sliced vegetables with hummus or a fruit smoothie with plant-based protein powder.</li>
+            </ul>
+        </section>
+        
+    </main>
+    <script src="../JS/script.js"></script>
+</asp:Content>

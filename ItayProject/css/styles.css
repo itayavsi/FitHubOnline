@@ -1,0 +1,195 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+     display: inline;
+     margin-right: 20px;
+    }
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #000000;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #ffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff0000;
+}
+
+.show-details {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hellovist{
+    float:right;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+}
+
+.workout-routine {
+    margin-bottom: 20px;
+}
+
+.red{
+    color:red;
+}
+
+.workout-routine h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.workout-routine p {
+    font-size: 16px;
+}
+
+.registration-form {
+    text-align: center;
+    padding: 50px 0;
+    color: #333;
+}
+
+.registration-form h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.registration-form p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.registration-form form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-container input,
+.input-container select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container select {
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+button[type="submit"] {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff0000;
+}
+.diet-category {
+    display: none;
+}
+
+.valMsg{
+    color:red;
+    width:40%;
+    margin-left:4px;
+}
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .user-table th, .user-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .user-table th {
+        background-color: #f2f2f2;
+    }
+
+    .user-table tr:hover {
+        background-color: #f5f5f5;
+    }
+
